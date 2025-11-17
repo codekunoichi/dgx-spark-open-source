@@ -1,5 +1,7 @@
 # DGX Spark Starter Kit (Open Source)
 
+I am coming from Mac, hence Ubuntu is new to me. I hope this helps others who are in my shoes.
+
 This repository collects practical, beginner‑friendly notes and scripts for using an NVIDIA DGX Spark running Ubuntu. The goal is to make your first days on a DGX smooth and productive, whether you're a student, researcher, or engineer.
 
 ## Contents
