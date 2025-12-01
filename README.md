@@ -11,6 +11,7 @@ This repository collects practical, beginner‑friendly notes and scripts for us
 | `ubuntu-basics` | Cheat sheets and tips for using Ubuntu, including keyboard shortcuts, file navigation, screenshot instructions and common aliases. |
 | `dgx-setup` | Guides for getting started on DGX hardware: first‑time setup, installing GPU drivers, checking GPU status with `nvidia‑smi`, and monitoring system resources. |
 | `python-environment` | Instructions for creating virtual environments, using `pip`, and troubleshooting common Python environment issues on a DGX. |
+| `postgresql` | Steps to install PostgreSQL on DGX/Ubuntu, create roles/databases, and connect with DBeaver. |
 | `gpu-compute` | Tutorials on benchmarking your GPU, running large language models locally, and checking CUDA availability in PyTorch. |
 | `tips-tricks` | Productivity scripts, recommended applications and a few handy aliases to make your DGX workflow smoother. |
 
@@ -19,6 +20,10 @@ This repository collects practical, beginner‑friendly notes and scripts for us
 * Students learning machine learning or AI on high‑performance hardware.
 * Researchers and engineers using DGX workstations or similar GPU servers.
 * Anyone coming from macOS or Windows who needs a concise primer on Ubuntu and DGX.
+
+## Experiments
+
+We will be exploring knowledge graphs using the publicly available CMS NPI database—creating the graph, querying it, and documenting learnings as we go.
 
 ## Contributing
 
