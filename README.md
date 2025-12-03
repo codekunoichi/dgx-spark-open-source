@@ -12,6 +12,7 @@ This repository collects practical, beginner‑friendly notes and scripts for us
 | `dgx-setup` | Guides for getting started on DGX hardware: first‑time setup, installing GPU drivers, checking GPU status with `nvidia‑smi`, and monitoring system resources. |
 | `python-environment` | Instructions for creating virtual environments, using `pip`, and troubleshooting common Python environment issues on a DGX. |
 | `postgresql` | Steps to install PostgreSQL on DGX/Ubuntu, create roles/databases, and connect with DBeaver. |
+| `graphdb` | Guides and scripts for setting up Neo4j using Docker, organizing project folders, and beginning to explore knowledge graphs. |
 | `gpu-compute` | Tutorials on benchmarking your GPU, running large language models locally, and checking CUDA availability in PyTorch. |
 | `tips-tricks` | Productivity scripts, recommended applications and a few handy aliases to make your DGX workflow smoother. |
 
