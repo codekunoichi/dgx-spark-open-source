@@ -199,4 +199,31 @@ RETURN p, e, prov;
 
 ---
 
-*Prepared for Ninja’s Neo4j Knowledge Graph Journey.*
+# 16. LLM-Based Knowledge Graph Patterns
+
+*Notes from Knowledge Graph Building using LLM Lecture*
+
+Currently, the LLM will extract any nodes and relationships in the text. The graph can become complex even with a single, relatively simple document.
+
+### **View Schema**
+You can view the current schema using the db.schema.visualization() function.
+
+### **Query Document with Path Depth**
+```cypher
+MATCH (d:Document {fileName:'genai-fundamentals_1-generative-ai_1-what-is-genai.pdf'})
+MATCH p = (d)-[*0..3]-(e)
+RETURN p
+```
+
+### **Adjusting Path Depth**
+The `[*0..3]` pattern matches paths of up to three relationships between the document and the entities. Increasing the number will return more complex paths, but the query will take longer.
+
+### **Query Concepts by Document**
+```cypher
+MATCH (e:Concept {id: "GraphRAG"})<-[:HAS_ENTITY]-(c:Chunk)-[:PART_OF]->(d:Document)
+RETURN DISTINCT d.fileName
+```
+
+---
+
+*Prepared for Ninja's Neo4j Knowledge Graph Journey.*
