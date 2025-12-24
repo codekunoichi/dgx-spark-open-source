@@ -90,6 +90,42 @@ NEO4J_DATABASE=neo4j
 
 ---
 
+### 4a. Install APOC Plugin (Required for KG Builder)
+
+You will find the code here [genai-graphrag-python](https://github.com/codekunoichi/genai-graphrag-python) 
+
+> ⚠️ **Required for `kg_builder.py`**  
+> The Knowledge Graph builder relies on APOC procedures (for example  
+> `apoc.create.addLabels`) to dynamically assign labels during graph creation.
+>  
+> If APOC is not installed and enabled, `kg_builder.py` will fail at runtime.
+
+#### Install APOC in Neo4j Desktop
+
+1. Open **Neo4j Desktop**
+2. Go to **Local instances**
+3. Select your running DBMS (for example: `ninja-graph-experiments`)
+4. Click the **three dots (⋯)** on the instance card → **Plugins**
+5. Click **Install** next to **APOC**
+6. Restart the DBMS
+
+#### Verify APOC is available
+
+Open the Neo4j Browser and run:
+
+```cypher
+SHOW PROCEDURES
+YIELD name
+WHERE name = "apoc.create.addLabels"
+RETURN name;
+```
+
+If the procedure is returned, APOC is installed and enabled correctly.
+
+Only proceed to running `kg_builder.py` after this verification succeeds.
+
+---
+
 ### 5. Validate the environment
 
 You will find the code here [genai-graphrag-python](https://github.com/codekunoichi/genai-graphrag-python) 
